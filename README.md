@@ -1,6 +1,36 @@
 # Tauri + React + Rust MVP
 
-这是一个最小可用的 Tauri + React + Rust 应用程序示例，演示了前端 React 与后端 Rust 之间的通信。
+<div align="center">
+
+[![GitHub stars](https://img.shields.io/github/stars/qindongliang/tauri-rust-react-mvp?style=social)](https://github.com/qindongliang/tauri-rust-react-mvp)
+[![GitHub forks](https://img.shields.io/github/forks/qindongliang/tauri-rust-react-mvp?style=social)](https://github.com/qindongliang/tauri-rust-react-mvp/fork)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Rust](https://img.shields.io/badge/Rust-1.2-orange.svg)](https://www.rust-lang.org/)
+[![React](https://img.shields.io/badge/React-18.2-blue.svg)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
+
+一个最小可用的 Tauri + React + Rust 应用程序示例，演示了前端 React 与后端 Rust 之间的通信。
+
+[特性](#功能) • [快速开始](#快速开始) • [文档](#文档) • [贡献](#贡献)
+
+</div>
+
+## 📋 目录
+
+- [功能](#功能)
+- [技术栈](#技术栈)
+- [项目结构](#项目结构)
+- [快速开始](#快速开始)
+  - [环境准备](#环境准备)
+  - [安装运行](#安装运行)
+- [功能展示](#功能展示)
+- [代码说明](#代码说明)
+- [学习要点](#学习要点)
+- [下一步](#下一步)
+- [故障排除](#故障排除)
+- [贡献](#贡献)
+- [许可](#许可)
+- [致谢](#致谢)
 
 ## 项目结构
 
@@ -313,6 +343,43 @@ npm install
 - [Rust 与 Tauri 教程](https://tauri.app/v1/guides)
 - [React 文档](https://react.dev/)
 
+## 贡献
+
+我们欢迎所有形式的贡献！无论是报告Bug、提交功能建议，还是直接提交代码。
+
+### 如何贡献
+
+1. Fork 这个仓库
+2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交你的更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 打开一个 Pull Request
+
+### 贡献指南
+
+- 代码风格：遵循现有的代码风格
+- 测试：确保所有功能正常工作
+- 文档：更新相关文档（如果有需要）
+
+## 许可
+
+本项目基于 MIT 许可证开源。查看 [LICENSE](LICENSE) 文件了解详情。
+
+## 致谢
+
+- [Tauri Team](https://tauri.app/) - 创造了这个出色的框架
+- [React Team](https://reactjs.org/) - 前端库
+- [Rust Team](https://www.rust-lang.org/) - 系统编程语言
+- 所有贡献者和使用者
+
 ---
+
+<div align="center">
+
+**如果这个项目对你有帮助，请给我们一个 ⭐！**
+
+[⬆ 回到顶部](#tauri--react--rust-mvp)
+
+</div>
 
 **提示**：这个 MVP 专注于展示最基础的通信模式。实际项目中可能需要更复杂的错误处理、数据验证和状态管理。
