@@ -1,0 +1,47 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "Tauri React Rust MVP",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": false,
+      "category": "DeveloperTool",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "identifier": "com.example.tauri-react-mvp",
+      "longDescription": "A simple Tauri + React + Rust example",
+      "targets": "all"
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "Tauri React Rust MVP",
+        "width": 800,
+        "height": 600
+      }
+    ]
+  }
+}
