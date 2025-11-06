@@ -1,7 +1,19 @@
+/* =======================
+   全局样式重置和基础设置
+   ======================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -10,165 +22,37 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  min-height: 100vh;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 2rem;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  background: white;
-  border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  width: 100%;
-}
-
-h1 {
-  color: #333;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.description {
-  color: #666;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.input-group {
-  margin-bottom: 1.5rem;
-}
-
-label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #555;
-  font-weight: 500;
-}
-
-input {
-  width: 100%;
-  padding: 0.75rem;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  font-size: 1rem;
-  transition: border-color 0.3s;
-}
-
-input:focus {
-  outline: none;
-  border-color: #667eea;
-}
-
-button {
-  width: 100%;
-  padding: 1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
-}
-
-button:active {
-  transform: translateY(0);
-}
-
-.result {
-  margin-top: 1.5rem;
-  padding: 1rem;
-  background: #f5f5f5;
-  border-radius: 8px;
-  border-left: 4px solid #667eea;
-}
-
-.result p {
-  color: #333;
   line-height: 1.6;
 }
 
-.error {
-  color: #d32f2f;
-  background: #ffebee;
-  padding: 0.75rem;
-  border-radius: 8px;
-  margin-top: 1rem;
-  border-left: 4px solid #d32f2f;
+code {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'Courier New', monospace;
 }
 
-.system-info {
-  background: #f0f4ff;
-  padding: 1rem;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
-  border-left: 4px solid #667eea;
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
 
-.system-info h3 {
-  color: #667eea;
-  margin-bottom: 0.75rem;
-  font-size: 1.1rem;
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-.system-info p {
-  margin: 0.25rem 0;
-  color: #555;
-  font-size: 0.95rem;
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
 }
 
-.feature-section {
-  margin: 2rem 0;
-  padding: 1.5rem;
-  background: #fafafa;
-  border-radius: 12px;
-  border: 1px solid #e0e0e0;
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }
 
-.feature-section h3 {
-  color: #333;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+/* 暗色主题下的滚动条 */
+.app.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
 }
 
-.input-group-row {
-  display: flex;
-  gap: 0.75rem;
-  align-items: center;
-  margin-bottom: 0.75rem;
-}
-
-.input-group-row input {
-  flex: 1;
-  margin-bottom: 0;
-}
-
-.operator {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #667eea;
-  min-width: 20px;
-  text-align: center;
-}
-
-.details {
-  margin-top: 0.5rem;
-  color: #666;
+.app.dark ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
 }
